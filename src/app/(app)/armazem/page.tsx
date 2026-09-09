@@ -87,7 +87,7 @@ export default function ArmazemPage() {
         title="Armazém"
         description="Drives, links de referência e anotações operacionais. Cresce conforme decisões concretas forem tomadas."
       />
-      <div className="px-6 py-6 md:px-8 grid gap-8 md:grid-cols-3">
+      <div className="px-6 py-6 md:px-10 grid gap-8 md:grid-cols-3">
         <Column category="drive" label="Drives" />
         <Column category="link" label="Links" />
         <Column category="nota" label="Anotações" />

@@ -1,18 +1,23 @@
 "use client";
 
-import { useState } from "react";
 import { ExternalLink, Globe2 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { SCENARIO_OVERVIEW } from "@/data/overview";
-import { TrendProgressionTree } from "@/components/trends/trend-progression-tree";
-import { TRENDS } from "@/data/trends";
 
-export function ScenarioOverview() {
-  const [region, setRegion] = useState<"internacional" | "brasil">("internacional");
-
+export function ScenarioOverview({
+  region,
+  onRegionChange,
+}: {
+  region: "internacional" | "brasil";
+  onRegionChange: (v: "internacional" | "brasil") => void;
+}) {
   return (
-    <div className="rounded-xl border border-border/60 bg-card/30 p-5 md:p-6">
-      <Tabs value={region} onValueChange={(v) => setRegion(v as typeof region)}>
+    <div className="flex h-full flex-col rounded-xl border border-border/60 bg-card/30 p-5 md:p-6">
+      <Tabs
+        value={region}
+        onValueChange={(v) => onRegionChange(v as typeof region)}
+        className="flex flex-1 flex-col"
+      >
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <Globe2 className="size-4 text-accent-vivid" />
@@ -24,30 +29,22 @@ export function ScenarioOverview() {
           </TabsList>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1fr_240px]">
-          <div>
-            <TabsContent value="internacional" className="flex flex-col gap-3">
-              {SCENARIO_OVERVIEW.internacional.paragraphs.map((p, i) => (
-                <p key={i} className="text-[14px] leading-relaxed text-foreground/90">
-                  {p}
-                </p>
-              ))}
-              <SourceRow sources={SCENARIO_OVERVIEW.internacional.sources} />
-            </TabsContent>
-            <TabsContent value="brasil" className="flex flex-col gap-3">
-              {SCENARIO_OVERVIEW.brasil.paragraphs.map((p, i) => (
-                <p key={i} className="text-[14px] leading-relaxed text-foreground/90">
-                  {p}
-                </p>
-              ))}
-              <SourceRow sources={SCENARIO_OVERVIEW.brasil.sources} />
-            </TabsContent>
-          </div>
-
-          <div className="hidden lg:block">
-            <TrendProgressionTree trends={TRENDS} region={region} />
-          </div>
-        </div>
+        <TabsContent value="internacional" className="flex flex-col gap-3">
+          {SCENARIO_OVERVIEW.internacional.paragraphs.map((p, i) => (
+            <p key={i} className="text-[14px] leading-relaxed text-foreground/90">
+              {p}
+            </p>
+          ))}
+          <SourceRow sources={SCENARIO_OVERVIEW.internacional.sources} />
+        </TabsContent>
+        <TabsContent value="brasil" className="flex flex-col gap-3">
+          {SCENARIO_OVERVIEW.brasil.paragraphs.map((p, i) => (
+            <p key={i} className="text-[14px] leading-relaxed text-foreground/90">
+              {p}
+            </p>
+          ))}
+          <SourceRow sources={SCENARIO_OVERVIEW.brasil.sources} />
+        </TabsContent>
       </Tabs>
     </div>
   );

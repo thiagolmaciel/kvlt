@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
 import { PageHeader } from "@/components/site/page-header";
@@ -5,6 +8,7 @@ import { RelevanceBadge } from "@/components/trends/relevance-badge";
 import { TrendIcon } from "@/components/trends/trend-icon";
 import { TrendConstellation } from "@/components/trends/trend-constellation";
 import { ScenarioOverview } from "@/components/trends/scenario-overview";
+import { PanoramaTrendMap } from "@/components/trends/panorama-trend-map";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -12,6 +16,8 @@ import { TRENDS } from "@/data/trends";
 import { HORIZONS, STAGES } from "@/types";
 
 export default function TendenciasPage() {
+  const [region, setRegion] = useState<"internacional" | "brasil">("internacional");
+
   return (
     <div>
       <PageHeader
@@ -19,8 +25,11 @@ export default function TendenciasPage() {
         description="Panorama de até 10 anos à frente, com foco no exterior, sempre marcando onde o delay sul-americano vira oportunidade."
       />
 
-      <div className="px-6 py-6 md:px-8 flex flex-col gap-6">
-        <ScenarioOverview />
+      <div className="px-6 py-6 md:px-10 flex flex-col gap-6">
+        <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
+          <ScenarioOverview region={region} onRegionChange={setRegion} />
+          <PanoramaTrendMap trends={TRENDS} region={region} />
+        </div>
 
         <Tabs defaultValue="todas">
           <TabsList>
@@ -30,7 +39,7 @@ export default function TendenciasPage() {
           </TabsList>
 
           <TabsContent value="todas" className="mt-6">
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
               {TRENDS.map((trend) => (
                 <Link key={trend.slug} href={`/tendencias/${trend.slug}`}>
                   <Card className="h-full transition-colors hover:border-primary/40 hover:bg-card/80">
@@ -93,7 +102,7 @@ export default function TendenciasPage() {
                         {stage.years}
                       </span>
                     </div>
-                    <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                    <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
                       {items.map((trend) => {
                         const rel = trend.stageRelevance.find(
                           (s) => s.stage === stage.id

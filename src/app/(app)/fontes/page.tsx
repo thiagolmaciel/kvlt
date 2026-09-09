@@ -39,7 +39,7 @@ export default function FontesPage() {
         title="Fontes"
         description="Curadoria de imprensa, pesquisa de mercado e comunidades, Brasil e internacional."
       />
-      <div className="px-6 py-6 md:px-8">
+      <div className="px-6 py-6 md:px-10">
         <Tabs defaultValue="internacional">
           <TabsList>
             <TabsTrigger value="internacional" className="text-[15px]">Internacional</TabsTrigger>

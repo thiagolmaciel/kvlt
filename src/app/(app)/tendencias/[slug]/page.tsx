@@ -24,7 +24,7 @@ export default async function TrendDetailPage({
   if (!trend) notFound();
 
   return (
-    <div className="px-6 py-8 md:px-8 max-w-4xl">
+    <div className="mx-auto max-w-4xl px-6 py-8 md:px-10">
       <Link
         href="/tendencias"
         className="mb-6 inline-flex items-center gap-1.5 text-[13px] text-muted-foreground hover:text-foreground"

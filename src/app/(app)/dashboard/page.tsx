@@ -47,7 +47,7 @@ const FOCUS_IDEAS = TRENDS.filter((t) =>
 
 export default function DashboardPage() {
   return (
-    <div className="px-6 py-8 md:px-10 flex flex-col gap-10 max-w-7xl">
+    <div className="flex flex-col gap-10 px-6 py-8 md:px-10">
       <section className="relative flex items-center justify-between gap-8 overflow-hidden">
         <div className="relative z-10 animate-fade-up">
           <div className="text-[13px] font-medium uppercase tracking-wide text-accent-vivid">

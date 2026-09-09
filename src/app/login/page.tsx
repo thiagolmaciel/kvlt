@@ -22,11 +22,7 @@ export default function LoginPage() {
       <section className="relative hidden w-1/2 shrink-0 overflow-hidden bg-primary lg:flex lg:flex-col lg:justify-between lg:p-12">
         <span
           aria-hidden
-          className="pointer-events-none absolute left-1/2 top-[38%] -translate-x-1/2 -translate-y-1/2 select-none text-[13rem] font-black leading-none tracking-tighter text-white xl:text-[16rem]"
-          style={{
-            maskImage: "linear-gradient(to right, black 35%, transparent 72%)",
-            WebkitMaskImage: "linear-gradient(to right, black 35%, transparent 72%)",
-          }}
+          className="pointer-events-none absolute left-12 top-[48%] -translate-y-1/2 select-none text-[12rem] font-black leading-none tracking-tighter text-white xl:text-[14rem]"
         >
           KVLT
         </span>
