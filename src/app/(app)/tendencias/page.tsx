@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/site/page-header";
 import { RelevanceBadge } from "@/components/trends/relevance-badge";
 import { TrendIcon } from "@/components/trends/trend-icon";
 import { TrendConstellation } from "@/components/trends/trend-constellation";
+import { ScenarioOverview } from "@/components/trends/scenario-overview";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -18,7 +19,9 @@ export default function TendenciasPage() {
         description="Panorama de até 10 anos à frente, com foco no exterior, sempre marcando onde o delay sul-americano vira oportunidade."
       />
 
-      <div className="px-6 py-6 md:px-8">
+      <div className="px-6 py-6 md:px-8 flex flex-col gap-6">
+        <ScenarioOverview />
+
         <Tabs defaultValue="todas">
           <TabsList>
             <TabsTrigger value="todas" className="text-[15px]">Grade</TabsTrigger>

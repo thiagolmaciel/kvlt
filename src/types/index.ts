@@ -1,10 +1,44 @@
 export type Stage = "money-maker" | "enterprise" | "entity" | "big-tech";
 
-export const STAGES: { id: Stage; label: string; years: string }[] = [
-  { id: "money-maker", label: "Bootstrap", years: "1–2 anos" },
-  { id: "enterprise", label: "Scale-up", years: "2–4 anos" },
-  { id: "entity", label: "Corporação", years: "3–6 anos" },
-  { id: "big-tech", label: "Big Tech", years: "6+ anos" },
+export const STAGES: {
+  id: Stage;
+  label: string;
+  years: string;
+  tagline: string;
+  description: string;
+}[] = [
+  {
+    id: "money-maker",
+    label: "Bootstrap",
+    years: "1–2 anos",
+    tagline: "Prestar serviço, acumular capital",
+    description:
+      "A empresa se inicia por meio de relações nacionais e, possivelmente, internacionais, prestando serviços e acumulando renda e capital para as evoluções seguintes.",
+  },
+  {
+    id: "enterprise",
+    label: "Scale-up",
+    years: "2–4 anos",
+    tagline: "Portfólio estruturado, nicho definido",
+    description:
+      "A empresa toma forma como um negócio estável de pequeno porte, já com portfólio estruturado com foco no futuro estipulável da tecnologia internacional. Início de tentativas de expansão para o exterior, com nicho aproximado.",
+  },
+  {
+    id: "entity",
+    label: "Corporação",
+    years: "3–6 anos",
+    tagline: "Âmbito internacional, agente transformador",
+    description:
+      "A empresa se torna uma organização em âmbito internacional, buscando consolidar-se, através de um serviço ou produto, como agente transformador da tecnologia nacional e exterior.",
+  },
+  {
+    id: "big-tech",
+    label: "Big Tech",
+    years: "6+ anos",
+    tagline: "Resultados significantes, futuro em aberto",
+    description:
+      "A empresa deve, neste estágio, ser uma organização estabelecida. O futuro pode ser incerto, mas é necessário que, até aqui, existam resultados significantes.",
+  },
 ];
 
 export type Horizon = "curto" | "medio" | "longo";

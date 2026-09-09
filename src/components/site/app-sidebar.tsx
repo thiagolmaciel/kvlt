@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NAV_ITEMS } from "@/lib/nav";
+import { StageTracker } from "@/components/site/stage-tracker";
 
 const ICONS = {
   "layout-dashboard": LayoutDashboard,
@@ -29,7 +30,7 @@ export function AppSidebar() {
         <span className="text-[15px] font-semibold tracking-widest">KVLT</span>
       </div>
 
-      <nav className="flex-1 px-3 py-4 flex flex-col gap-0.5">
+      <nav className="flex flex-col gap-0.5 px-3 py-4">
         {NAV_ITEMS.map((item) => {
           const Icon = ICONS[item.icon];
           const active =
@@ -39,12 +40,15 @@ export function AppSidebar() {
               key={item.href}
               href={item.href}
               className={cn(
-                "flex items-center gap-3 rounded-md px-3 py-2.5 text-[15px] transition-colors",
+                "relative flex items-center gap-3 rounded-md px-3 py-2.5 text-[15px] transition-colors",
                 active
                   ? "bg-sidebar-accent text-sidebar-accent-foreground font-medium"
                   : "text-muted-foreground hover:bg-sidebar-accent/60 hover:text-sidebar-accent-foreground"
               )}
             >
+              {active && (
+                <span className="absolute left-0 top-1/2 h-4 w-[3px] -translate-y-1/2 rounded-full bg-primary" />
+              )}
               <Icon
                 className={cn("size-[18px]", active ? "text-accent-vivid" : "")}
                 strokeWidth={2}
@@ -55,12 +59,17 @@ export function AppSidebar() {
         })}
       </nav>
 
-      <div className="px-3 pb-4 pt-2 border-t border-sidebar-border">
-        <div className="rounded-lg bg-sidebar-accent/40 px-3 py-2.5 text-[13px] leading-relaxed text-muted-foreground">
+      <div className="mt-auto flex flex-col gap-5 px-5 pb-5 pt-4 border-t border-sidebar-border">
+        <div>
+          <div className="mb-3 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+            Estágios
+          </div>
+          <StageTracker currentIndex={0} />
+        </div>
+
+        <div className="rounded-lg bg-sidebar-accent/40 px-3 py-2.5 text-[12px] leading-relaxed text-muted-foreground">
           Uso exclusivo <span className="text-foreground">Th.</span> &{" "}
           <span className="text-foreground">Rd.</span>
-          <br />
-          Ambiente mutável por estágio.
         </div>
       </div>
     </aside>

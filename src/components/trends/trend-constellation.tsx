@@ -8,23 +8,32 @@ import { HORIZONS } from "@/types";
 import { cn } from "@/lib/utils";
 
 const POSITIONS: Record<string, { x: number; y: number }> = {
-  "ia-agentica": { x: 14, y: 20 },
-  "ia-nativa-desenvolvimento": { x: 24, y: 55 },
-  "talento-remoto-nearshoring": { x: 10, y: 82 },
-  "seguranca-fraude-ia": { x: 30, y: 15 },
-  "pix-infraestrutura-financeira": { x: 27, y: 88 },
-  "ia-vertical-saas": { x: 50, y: 22 },
-  "governanca-regulacao-ia": { x: 58, y: 58 },
-  "upskilling-corporativo-ia": { x: 48, y: 86 },
-  "edge-ai-modelos-pequenos": { x: 82, y: 40 },
-  "energia-datacenters-ia": { x: 88, y: 74 },
+  "ia-agentica": { x: 13, y: 18 },
+  "ia-nativa-desenvolvimento": { x: 25, y: 50 },
+  "talento-remoto-nearshoring": { x: 12, y: 82 },
+  "seguranca-fraude-ia": { x: 31, y: 14 },
+  "pix-infraestrutura-financeira": { x: 29, y: 88 },
+  "ia-vertical-saas": { x: 52, y: 20 },
+  "governanca-regulacao-ia": { x: 60, y: 55 },
+  "upskilling-corporativo-ia": { x: 50, y: 87 },
+  "edge-ai-modelos-pequenos": { x: 83, y: 35 },
+  "energia-datacenters-ia": { x: 88, y: 75 },
 };
 
+const LINKS: [string, string][] = [
+  ["ia-agentica", "ia-nativa-desenvolvimento"],
+  ["ia-nativa-desenvolvimento", "talento-remoto-nearshoring"],
+  ["seguranca-fraude-ia", "pix-infraestrutura-financeira"],
+  ["ia-vertical-saas", "governanca-regulacao-ia"],
+  ["edge-ai-modelos-pequenos", "energia-datacenters-ia"],
+  ["talento-remoto-nearshoring", "upskilling-corporativo-ia"],
+];
+
 const RADIUS: Record<RelevanceLevel, number> = {
-  critica: 15,
-  alta: 12,
-  media: 10,
-  baixa: 8,
+  critica: 16,
+  alta: 13,
+  media: 11,
+  baixa: 9,
 };
 
 function combinedLevel(t: TrendTopic): RelevanceLevel {
@@ -41,11 +50,11 @@ export function TrendConstellation({ trends }: { trends: TrendTopic[] }) {
 
   return (
     <div className="rounded-lg border border-border/60 bg-card/30">
-      <div className="relative h-[440px] w-full overflow-hidden">
+      <div className="relative h-[560px] w-full overflow-hidden md:h-[520px]">
         {(["curto", "medio", "longo"] as const).map((h, i) => (
           <div
             key={h}
-            className="pointer-events-none absolute inset-y-0 flex flex-col justify-between py-3"
+            className="pointer-events-none absolute inset-y-0 py-3"
             style={{ left: `${i * (100 / 3)}%`, width: `${100 / 3}%` }}
           >
             <span className="px-4 text-[11px] font-medium uppercase tracking-wider text-muted-foreground/70">
@@ -56,6 +65,34 @@ export function TrendConstellation({ trends }: { trends: TrendTopic[] }) {
             )}
           </div>
         ))}
+
+        <svg
+          className="pointer-events-none absolute inset-0 h-full w-full"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          {LINKS.map(([a, b]) => {
+            const pa = POSITIONS[a];
+            const pb = POSITIONS[b];
+            if (!pa || !pb) return null;
+            const dimmed = active && active !== a && active !== b;
+            return (
+              <line
+                key={`${a}-${b}`}
+                x1={pa.x}
+                y1={pa.y}
+                x2={pb.x}
+                y2={pb.y}
+                vectorEffect="non-scaling-stroke"
+                className={cn(
+                  "stroke-border transition-opacity",
+                  dimmed ? "opacity-30" : "opacity-100"
+                )}
+                strokeWidth={1}
+              />
+            );
+          })}
+        </svg>
 
         {trends.map((t) => {
           const pos = POSITIONS[t.slug] ?? { x: 50, y: 50 };
@@ -70,13 +107,11 @@ export function TrendConstellation({ trends }: { trends: TrendTopic[] }) {
               onFocus={() => setActive(t.slug)}
               onBlur={() => setActive(null)}
               onClick={() => router.push(`/tendencias/${t.slug}`)}
-              className="group absolute flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full transition-transform duration-200 ease-out"
+              className="group absolute flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-1.5 transition-transform duration-200 ease-out"
               style={{
                 left: `${pos.x}%`,
                 top: `${pos.y}%`,
-                width: r * 2 + 16,
-                height: r * 2 + 16,
-                transform: `translate(-50%, -50%) scale(${isActive ? 1.15 : 1})`,
+                transform: `translate(-50%, -50%) scale(${isActive ? 1.08 : 1})`,
               }}
               aria-label={t.title}
             >
@@ -93,6 +128,14 @@ export function TrendConstellation({ trends }: { trends: TrendTopic[] }) {
               >
                 <TrendIcon icon={t.icon} className="size-[55%]" />
               </span>
+              <span
+                className={cn(
+                  "max-w-[92px] text-center text-[11px] font-medium leading-tight",
+                  isActive ? "text-foreground" : "text-muted-foreground"
+                )}
+              >
+                {t.title.split(" (")[0]}
+              </span>
             </button>
           );
         })}
@@ -101,8 +144,8 @@ export function TrendConstellation({ trends }: { trends: TrendTopic[] }) {
           <div
             className="pointer-events-none absolute z-10 w-64 rounded-lg border border-border bg-popover p-3.5 text-popover-foreground shadow-lg"
             style={{
-              left: `${Math.min(Math.max(POSITIONS[activeTrend.slug]?.x ?? 50, 14), 86)}%`,
-              top: `${(POSITIONS[activeTrend.slug]?.y ?? 50) > 55 ? (POSITIONS[activeTrend.slug]?.y ?? 50) - 8 : (POSITIONS[activeTrend.slug]?.y ?? 50) + 8}%`,
+              left: `${Math.min(Math.max(POSITIONS[activeTrend.slug]?.x ?? 50, 16), 84)}%`,
+              top: `${(POSITIONS[activeTrend.slug]?.y ?? 50) > 55 ? (POSITIONS[activeTrend.slug]?.y ?? 50) - 12 : (POSITIONS[activeTrend.slug]?.y ?? 50) + 12}%`,
               transform: `translate(-50%, ${(POSITIONS[activeTrend.slug]?.y ?? 50) > 55 ? "-100%" : "0"})`,
             }}
           >

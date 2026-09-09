@@ -7,9 +7,9 @@ export default function RoadmapsPage() {
     <div>
       <PageHeader
         title="Roadmaps"
-        description="Rota individual, mais eficiente possível, até o nível de maestria técnica/negócio exigido em cada estágio da empresa."
+        description="Rota individual, mais eficiente possível, até o nível de maestria técnica e de negócio exigido em cada estágio da empresa."
       />
-      <div className="px-6 py-6 md:px-8 max-w-3xl">
+      <div className="px-6 py-6 md:px-8 max-w-6xl">
         <RoadmapView thiago={ROADMAP_THIAGO} rodrigo={ROADMAP_RODRIGO} />
       </div>
     </div>
