@@ -1,5 +1,4 @@
-import { AppSidebar } from "@/components/site/app-sidebar";
-import { AppTopbar } from "@/components/site/app-topbar";
+import { AppHeader } from "@/components/site/app-header";
 
 export default function AppShellLayout({
   children,
@@ -7,12 +6,11 @@ export default function AppShellLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex h-screen w-full overflow-hidden bg-background">
-      <AppSidebar />
-      <div className="flex flex-1 flex-col min-w-0 h-screen">
-        <AppTopbar />
-        <main className="flex-1 min-w-0 overflow-y-auto">{children}</main>
-      </div>
+    <div className="flex h-screen w-full flex-col overflow-hidden bg-background">
+      <AppHeader />
+      <main className="flex-1 overflow-y-auto">
+        <div className="mx-auto w-full max-w-[1440px]">{children}</div>
+      </main>
     </div>
   );
 }

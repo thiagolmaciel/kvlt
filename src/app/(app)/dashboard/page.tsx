@@ -47,9 +47,9 @@ const FOCUS_IDEAS = TRENDS.filter((t) =>
 
 export default function DashboardPage() {
   return (
-    <div className="px-6 py-8 md:px-8 flex flex-col gap-10 max-w-6xl">
+    <div className="px-6 py-8 md:px-10 flex flex-col gap-10 max-w-7xl">
       <section className="relative flex items-center justify-between gap-8 overflow-hidden">
-        <div className="animate-fade-up">
+        <div className="relative z-10 animate-fade-up">
           <div className="text-[13px] font-medium uppercase tracking-wide text-accent-vivid">
             Painel privado
           </div>
@@ -69,7 +69,7 @@ export default function DashboardPage() {
 
         <span
           aria-hidden
-          className="pointer-events-none hidden shrink-0 select-none text-[9rem] font-bold leading-none tracking-tighter text-primary/[0.07] lg:block xl:text-[11rem]"
+          className="pointer-events-none absolute -right-6 top-1/2 hidden -translate-y-1/2 select-none text-[13rem] font-black leading-none tracking-tighter text-primary lg:block xl:text-[15rem]"
         >
           KVLT
         </span>

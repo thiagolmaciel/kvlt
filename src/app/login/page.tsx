@@ -19,27 +19,31 @@ export default function LoginPage() {
 
   return (
     <main className="flex min-h-screen w-full">
-      <section className="relative hidden w-1/2 shrink-0 overflow-hidden border-r border-border/60 bg-sidebar lg:flex lg:flex-col lg:justify-between lg:p-12">
+      <section className="relative hidden w-1/2 shrink-0 overflow-hidden bg-primary lg:flex lg:flex-col lg:justify-between lg:p-12">
         <span
           aria-hidden
-          className="pointer-events-none absolute -right-10 top-1/2 -translate-y-1/2 select-none text-[13rem] font-bold leading-none tracking-tighter text-primary/[0.08] xl:text-[16rem]"
+          className="pointer-events-none absolute left-1/2 top-[38%] -translate-x-1/2 -translate-y-1/2 select-none text-[13rem] font-black leading-none tracking-tighter text-white xl:text-[16rem]"
+          style={{
+            maskImage: "linear-gradient(to right, black 35%, transparent 72%)",
+            WebkitMaskImage: "linear-gradient(to right, black 35%, transparent 72%)",
+          }}
         >
           KVLT
         </span>
 
         <div className="relative">
-          <span className="text-[15px] font-semibold tracking-widest">KVLT</span>
+          <span className="text-[16px] font-bold tracking-tight text-white">KVLT</span>
         </div>
 
         <div className="relative max-w-sm">
-          <h1 className="text-[28px] font-semibold leading-tight tracking-tight">
+          <h1 className="text-[30px] font-semibold leading-tight tracking-tight text-white">
             Painel privado de estruturação.
           </h1>
-          <p className="mt-3 text-[14px] leading-relaxed text-muted-foreground">
+          <p className="mt-3 text-[14px] leading-relaxed text-white/70">
             Tendências, roadmaps e material de referência para os quatro
             estágios da empresa, de prestação de serviço a Big Tech.
           </p>
-          <StageTracker currentIndex={0} orientation="horizontal" className="mt-8" />
+          <StageTracker currentIndex={0} orientation="horizontal" onBrand className="mt-8" />
         </div>
       </section>
 

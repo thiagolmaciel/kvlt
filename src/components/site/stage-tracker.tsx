@@ -4,10 +4,12 @@ import { cn } from "@/lib/utils";
 export function StageTracker({
   currentIndex = 0,
   orientation = "vertical",
+  onBrand = false,
   className,
 }: {
   currentIndex?: number;
   orientation?: "vertical" | "horizontal";
+  onBrand?: boolean;
   className?: string;
 }) {
   if (orientation === "horizontal") {
@@ -19,15 +21,28 @@ export function StageTracker({
               <span
                 className={cn(
                   "flex size-2.5 rounded-full",
-                  i < currentIndex && "bg-accent-vivid",
-                  i === currentIndex && "bg-primary animate-ring-pulse",
-                  i > currentIndex && "bg-border"
+                  onBrand
+                    ? i <= currentIndex
+                      ? "bg-white"
+                      : "bg-white/30"
+                    : cn(
+                        i < currentIndex && "bg-accent-vivid",
+                        i === currentIndex && "bg-primary",
+                        i > currentIndex && "bg-border"
+                      ),
+                  i === currentIndex && "animate-ring-pulse"
                 )}
               />
               <span
                 className={cn(
                   "text-[12px] font-medium",
-                  i === currentIndex ? "text-foreground" : "text-muted-foreground"
+                  onBrand
+                    ? i === currentIndex
+                      ? "text-white"
+                      : "text-white/55"
+                    : i === currentIndex
+                      ? "text-foreground"
+                      : "text-muted-foreground"
                 )}
               >
                 {stage.label}
@@ -37,7 +52,13 @@ export function StageTracker({
               <span
                 className={cn(
                   "mx-2 h-px flex-1",
-                  i < currentIndex ? "bg-accent-vivid" : "bg-border"
+                  onBrand
+                    ? i < currentIndex
+                      ? "bg-white/60"
+                      : "bg-white/20"
+                    : i < currentIndex
+                      ? "bg-accent-vivid"
+                      : "bg-border"
                 )}
               />
             )}
