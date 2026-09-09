@@ -1,0 +1,77 @@
+import type { WarehouseItem } from "@/types";
+
+export const WAREHOUSE_ITEMS: WarehouseItem[] = [
+  {
+    category: "drive",
+    title: "Drive raiz da empresa",
+    description: "Pasta compartilhada para documentos, contratos, apresentações e material bruto de pesquisa. Estrutura de subpastas ainda não definida.",
+    status: "pendente",
+    tags: ["administrativo"],
+  },
+  {
+    category: "drive",
+    title: "Organização Git privada",
+    description: "Repositórios dos primeiros projetos e clientes da fase Bootstrap. Convenção de nomenclatura e permissões de acesso (Thiago/Rodrigo) a definir.",
+    status: "pendente",
+    tags: ["engenharia"],
+  },
+  {
+    category: "drive",
+    title: "Banco de propostas comerciais",
+    description: "Modelo de proposta e contrato de prestação de serviço para os primeiros clientes de nearshore ou implementação de agentes.",
+    status: "pendente",
+    tags: ["comercial"],
+  },
+  {
+    category: "link",
+    title: "Documentação Open Finance Brasil",
+    description: "Referência técnica oficial para produtos que integram com Pix e Open Finance.",
+    url: "https://openfinancebrasil.org.br",
+    status: "ativo",
+    tags: ["referência técnica"],
+  },
+  {
+    category: "link",
+    title: "Acompanhamento do PL 2338",
+    description: "Tracking do Marco Legal da IA no Congresso. Revisar antes de qualquer decisão de produto exposta à regulação.",
+    url: "https://regulations.ai/regulations/RAI-BR-NA-PDLN2XX-2023",
+    status: "ativo",
+    tags: ["regulação"],
+  },
+  {
+    category: "link",
+    title: "Anthropic Academy",
+    description: "Trilhas de estudo usadas nos roadmaps de Thiago e Rodrigo. Certificados gratuitos, referência recorrente.",
+    url: "https://anthropic.skilljar.com",
+    status: "ativo",
+    tags: ["estudo"],
+  },
+  {
+    category: "nota",
+    title: "Nicho da fase Bootstrap, a decidir",
+    description: "Candidatos levantados na área de Tendências: agentes verticais, defesa anti-fraude (deepfake e Pix), serviços de desenvolvimento IA-nativo, squad nearshore. Precisa de decisão conjunta entre Thiago e Rodrigo antes do início das atividades, previsto para o fim de 2027.",
+    status: "esboço",
+    tags: ["estratégia", "prioridade alta"],
+  },
+  {
+    category: "nota",
+    title: "Estrutura jurídica inicial",
+    description: "MEI ou LTDA para o primeiro ano de operação. Levantar com contador antes do lançamento, considerando faturamento em dólar (nearshore) versus operação puramente nacional.",
+    status: "esboço",
+    tags: ["jurídico"],
+  },
+  {
+    category: "nota",
+    title: "Localização e presença física",
+    description: "Base em São Paulo, região Central. Definir se a empresa opera remota desde o início ou se faz sentido um endereço fiscal/coworking na região central para os primeiros contratos.",
+    status: "esboço",
+    tags: ["administrativo"],
+  },
+  {
+    category: "nota",
+    title: "Identidade e marca",
+    description: "KVLT é codinome de trabalho para esta plataforma interna, não necessariamente o nome final da empresa. Nome, identidade visual e domínio próprio ainda em aberto.",
+    status: "esboço",
+    tags: ["marca"],
+  },
+];
