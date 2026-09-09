@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Radar, Route, Archive, Newspaper, ArrowRight, Flame } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { StageSelector } from "@/components/dashboard/stage-selector";
+import { JaguaraInvite } from "@/components/jaguara/jaguara-invite";
 import { TrendIcon } from "@/components/trends/trend-icon";
 import { TRENDS } from "@/data/trends";
 import { ROADMAP_THIAGO, ROADMAP_RODRIGO } from "@/data/roadmaps";
@@ -67,12 +68,7 @@ export default function DashboardPage() {
           </p>
         </div>
 
-        <span
-          aria-hidden
-          className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 select-none text-[13rem] font-black leading-none tracking-tighter text-primary lg:block xl:text-[15rem]"
-        >
-          KVLT
-        </span>
+        <JaguaraInvite />
       </section>
 
       <section>

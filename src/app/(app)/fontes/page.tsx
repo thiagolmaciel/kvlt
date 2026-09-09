@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Newspaper } from "lucide-react";
 import { PageHeader } from "@/components/site/page-header";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -37,6 +37,7 @@ export default function FontesPage() {
     <div>
       <PageHeader
         title="Fontes"
+        icon={Newspaper}
         description="Curadoria de imprensa, pesquisa de mercado e comunidades, Brasil e internacional."
       />
       <div className="px-6 py-6 md:px-10">

@@ -9,7 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.124.0",
     "@base-ui/react": "^1.8.0",
+    "@xyflow/react": "^12.11.6",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.2.6",
     "geist": "^1.7.2",

@@ -1,4 +1,4 @@
-import { HardDrive, Link2, StickyNote, ExternalLink } from "lucide-react";
+import { HardDrive, Link2, StickyNote, ExternalLink, Archive } from "lucide-react";
 import { PageHeader } from "@/components/site/page-header";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -85,6 +85,7 @@ export default function ArmazemPage() {
     <div>
       <PageHeader
         title="Armazém"
+        icon={Archive}
         description="Drives, links de referência e anotações operacionais. Cresce conforme decisões concretas forem tomadas."
       />
       <div className="px-6 py-6 md:px-10 grid gap-8 md:grid-cols-3">

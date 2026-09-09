@@ -100,7 +100,7 @@ export function CommandPalette() {
       </button>
 
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="top-[20%] max-w-lg translate-y-0 gap-0 overflow-hidden p-0">
+        <DialogContent className="top-[18%] max-w-2xl translate-y-0 gap-0 overflow-hidden p-0">
           <DialogHeader className="sr-only">
             <DialogTitle>Buscar</DialogTitle>
           </DialogHeader>
@@ -127,18 +127,14 @@ export function CommandPalette() {
               <button
                 key={r.href}
                 onClick={() => go(r.href)}
-                className="group flex w-full items-center gap-3 rounded-md px-3 py-2.5 text-left hover:bg-secondary"
+                className="group flex w-full items-center gap-2.5 rounded-md px-3 py-2 text-left hover:bg-secondary"
               >
-                <span className="flex size-7 shrink-0 items-center justify-center rounded-md bg-secondary text-accent-vivid group-hover:bg-background">
+                <span className="flex size-4 shrink-0 items-center justify-center text-accent-vivid">
                   {r.icon}
                 </span>
-                <span className="flex-1 min-w-0">
-                  <span className="block truncate text-[14px] font-medium">
-                    {r.label}
-                  </span>
-                  <span className="block truncate text-[12px] text-muted-foreground">
-                    {r.hint}
-                  </span>
+                <span className="truncate text-[13.5px] font-medium">{r.label}</span>
+                <span className="ml-auto shrink-0 truncate pl-3 text-[12px] text-muted-foreground">
+                  {r.hint}
                 </span>
                 <CornerDownLeft className="size-3.5 shrink-0 text-muted-foreground opacity-0 group-hover:opacity-100" />
               </button>

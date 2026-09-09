@@ -1,0 +1,37 @@
+.react-flow {
+  background-color: transparent;
+}
+
+.react-flow__node {
+  cursor: pointer;
+}
+
+.react-flow__background {
+  color: var(--border);
+}
+
+.react-flow__controls {
+  box-shadow: none;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.react-flow__controls-button {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  color: var(--muted-foreground);
+}
+
+.react-flow__controls-button:hover {
+  background: var(--secondary);
+  color: var(--foreground);
+}
+
+.react-flow__controls-button svg {
+  fill: currentColor;
+}
+
+.react-flow__attribution {
+  display: none;
+}

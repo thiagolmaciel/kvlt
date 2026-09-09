@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight, Clock, Radar } from "lucide-react";
 import { PageHeader } from "@/components/site/page-header";
 import { RelevanceBadge } from "@/components/trends/relevance-badge";
 import { TrendIcon } from "@/components/trends/trend-icon";
-import { TrendConstellation } from "@/components/trends/trend-constellation";
+import { TrendGraph } from "@/components/trends/trend-graph/trend-graph";
 import { ScenarioOverview } from "@/components/trends/scenario-overview";
 import { PanoramaTrendMap } from "@/components/trends/panorama-trend-map";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -22,11 +22,12 @@ export default function TendenciasPage() {
     <div>
       <PageHeader
         title="Tendências"
+        icon={Radar}
         description="Panorama de até 10 anos à frente, com foco no exterior, sempre marcando onde o delay sul-americano vira oportunidade."
       />
 
       <div className="px-6 py-6 md:px-10 flex flex-col gap-6">
-        <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
+        <div className="grid gap-6 lg:grid-cols-2 lg:items-start">
           <ScenarioOverview region={region} onRegionChange={setRegion} />
           <PanoramaTrendMap trends={TRENDS} region={region} />
         </div>
@@ -82,9 +83,11 @@ export default function TendenciasPage() {
 
           <TabsContent value="mapa" className="mt-6">
             <p className="mb-4 text-[14px] leading-relaxed text-muted-foreground">
-              Cada ponto é um tópico posicionado no tempo (eixo horizontal) e dimensionado pela relevância combinada. Passe o cursor para ler o resumo, clique para abrir.
+              Cada nó é um tópico posicionado no tempo e dimensionado pela relevância combinada. Arraste para navegar, use os controles para dar zoom, clique para ver o resumo.
             </p>
-            <TrendConstellation trends={TRENDS} />
+            <div className="h-[560px] overflow-hidden rounded-lg border border-border/60 bg-card/30">
+              <TrendGraph trends={TRENDS} className="h-full" />
+            </div>
           </TabsContent>
 
           <TabsContent value="estagios" className="mt-6">
