@@ -69,7 +69,7 @@ export default function DashboardPage() {
 
         <span
           aria-hidden
-          className="pointer-events-none absolute -right-6 top-1/2 hidden -translate-y-1/2 select-none text-[13rem] font-black leading-none tracking-tighter text-primary lg:block xl:text-[15rem]"
+          className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 select-none text-[13rem] font-black leading-none tracking-tighter text-primary lg:block xl:text-[15rem]"
         >
           KVLT
         </span>

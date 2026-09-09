@@ -22,7 +22,8 @@ export function AppHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-2 border-b border-border/60 bg-background/95 px-6 backdrop-saturate-150 md:px-10">
+    <header className="sticky top-0 z-40 flex h-16 shrink-0 items-center border-b border-border/60 bg-background/95 backdrop-saturate-150">
+    <div className="mx-auto flex w-full max-w-[1440px] items-center gap-2 px-6 md:px-10">
       <Link
         href="/dashboard"
         className="mr-6 shrink-0 text-[16px] font-bold tracking-tight"
@@ -90,6 +91,7 @@ export function AppHeader() {
         <CommandPalette />
         <ThemeToggle />
       </div>
+    </div>
     </header>
   );
 }
