@@ -28,8 +28,8 @@ function RoadmapPanel({ roadmap }: { roadmap: FounderRoadmap }) {
   );
 
   return (
-    <div className="grid gap-8 lg:grid-cols-[1fr_280px]">
-      <div className="relative order-2 flex flex-col gap-10 pl-7 before:absolute before:left-[9px] before:top-3 before:bottom-3 before:w-px before:bg-border lg:order-1">
+    <div className="grid min-w-0 gap-8 lg:grid-cols-[1fr_280px]">
+      <div className="relative order-2 min-w-0 flex flex-col gap-10 pl-7 before:absolute before:left-[9px] before:top-3 before:bottom-3 before:w-px before:bg-border lg:order-1">
         {roadmap.milestones.map((m, i) => (
           <div
             key={i}

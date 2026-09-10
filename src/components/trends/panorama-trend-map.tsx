@@ -48,9 +48,9 @@ export function PanoramaTrendMap({
   );
 
   return (
-    <div className="flex max-h-[480px] flex-col rounded-xl border border-border/60 bg-card/30 p-5 md:p-6">
-      <div className="mb-1 flex items-center gap-2">
-        <Route className="size-4 text-accent-vivid" />
+    <div className="flex min-w-0 max-h-[480px] flex-col rounded-xl border border-border/60 bg-card/30 p-5 md:p-6">
+      <div className="mb-1 flex flex-wrap items-center gap-2">
+        <Route className="size-4 shrink-0 text-accent-vivid" />
         <h2 className="text-[15px] font-semibold">Linha do tempo das tendências</h2>
         <div className="ml-auto">
           <TrendMapDialog trends={trends} />

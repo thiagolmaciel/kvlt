@@ -26,7 +26,7 @@ export function JaguaraInvite() {
         <MessageCircle className="size-4 shrink-0 opacity-70" />
       </button>
 
-      <div className="flex flex-col gap-1 bg-black/55 p-1.5 backdrop-blur-sm">
+      <div className="flex flex-col gap-1 bg-popover/95 p-1.5 backdrop-blur-sm">
         {EXAMPLES.map((ex) => (
           <button
             key={ex}
@@ -34,7 +34,7 @@ export function JaguaraInvite() {
               setExpanded(true);
               send(ex);
             }}
-            className="group flex w-full items-center gap-2.5 rounded-lg px-3 py-1.5 text-left text-[13px] text-primary-foreground/75 hover:bg-white/10 hover:text-primary-foreground"
+            className="group flex w-full items-center gap-2.5 rounded-lg px-3 py-1.5 text-left text-[13px] text-popover-foreground/70 hover:bg-secondary hover:text-popover-foreground"
           >
             <span className="flex-1 truncate">{ex}</span>
             <ArrowUpRight className="size-3.5 shrink-0 opacity-0 transition-opacity group-hover:opacity-70" />

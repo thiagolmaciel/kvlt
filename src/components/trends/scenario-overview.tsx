@@ -12,7 +12,7 @@ export function ScenarioOverview({
   onRegionChange: (v: "internacional" | "brasil") => void;
 }) {
   return (
-    <div className="flex h-full flex-col rounded-xl border border-border/60 bg-card/30 p-5 md:p-6">
+    <div className="flex h-full min-w-0 flex-col rounded-xl border border-border/60 bg-card/30 p-5 md:p-6">
       <Tabs
         value={region}
         onValueChange={(v) => onRegionChange(v as typeof region)}
