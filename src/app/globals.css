@@ -191,6 +191,19 @@
   animation: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
 @keyframes ring-pulse {
   0% {
     box-shadow: 0 0 0 0 color-mix(in oklch, var(--primary), transparent 45%);

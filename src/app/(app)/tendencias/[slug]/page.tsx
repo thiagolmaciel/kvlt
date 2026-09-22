@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ExternalLink, BookOpen, Lightbulb } from "lucide-react";
+import { ArrowLeft, ExternalLink, BookOpen, Lightbulb, Radar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -9,6 +9,7 @@ import { RelevanceBadge } from "@/components/trends/relevance-badge";
 import { TrendIcon } from "@/components/trends/trend-icon";
 import { TRENDS, getTrendBySlug } from "@/data/trends";
 import { HORIZONS, STAGES } from "@/types";
+import { getTrendSignals } from "@/lib/trend-signals";
 
 export function generateStaticParams() {
   return TRENDS.map((t) => ({ slug: t.slug }));
@@ -22,6 +23,7 @@ export default async function TrendDetailPage({
   const { slug } = await params;
   const trend = getTrendBySlug(slug);
   if (!trend) notFound();
+  const signals = getTrendSignals(slug);
 
   return (
     <div className="mx-auto max-w-4xl px-6 py-8 md:px-10">
@@ -96,6 +98,38 @@ export default async function TrendDetailPage({
           <p className="text-[15px] leading-relaxed">{trend.brazilGapNote}</p>
         </CardContent>
       </Card>
+
+      {signals.length > 0 && (
+        <section className="mt-9 rounded-xl border border-accent-vivid/25 bg-accent-vivid/[0.05] p-4">
+          <h2 className="mb-3 flex items-center gap-1.5 text-[15px] font-semibold">
+            <Radar className="size-4 text-accent-vivid" />
+            Sinais recentes
+            <span className="ml-1 flex items-center gap-1 text-[11px] font-normal text-muted-foreground">
+              <span className="size-1.5 rounded-full bg-accent-vivid animate-pulse" />
+              área viva, atualizada via Incorporar
+            </span>
+          </h2>
+          <div className="flex flex-col gap-2.5">
+            {signals.map((s) => (
+              <div key={s.id} className="rounded-lg bg-card/60 p-4 ring-1 ring-accent-vivid/15">
+                <p className="text-[14px] leading-relaxed">{s.relevance}</p>
+                <a
+                  href={s.newsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 flex items-center gap-1.5 text-[13px] text-muted-foreground hover:text-accent-vivid"
+                >
+                  {s.newsTitle}
+                  <ExternalLink className="size-3 shrink-0" />
+                </a>
+                <div className="mt-1 text-[11px] text-muted-foreground/70">
+                  {s.source} · {new Date(s.capturedAt).toLocaleDateString("pt-BR")}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mt-9">
         <h2 className="mb-3 text-[15px] font-semibold">Relevância por estágio</h2>

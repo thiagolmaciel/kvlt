@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { ExternalLink, Code2, Briefcase, Users, Brain, Layers3 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
@@ -168,7 +169,9 @@ export function RoadmapView({
   thiago: FounderRoadmap;
   rodrigo: FounderRoadmap;
 }) {
-  const [tab, setTab] = useState("thiago");
+  const searchParams = useSearchParams();
+  const initialFounder = searchParams.get("founder");
+  const [tab, setTab] = useState(initialFounder === "rodrigo" ? "rodrigo" : "thiago");
 
   return (
     <Tabs value={tab} onValueChange={setTab}>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Radar, Route, Archive, Newspaper, ArrowRight, Flame } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { StageSelector } from "@/components/dashboard/stage-selector";
+import { AiNewsBand } from "@/components/dashboard/ai-news-band";
 import { JaguaraInvite } from "@/components/jaguara/jaguara-invite";
 import { TrendIcon } from "@/components/trends/trend-icon";
 import { TRENDS } from "@/data/trends";
@@ -18,7 +19,7 @@ const QUICK_LINKS = [
     stat: `${TRENDS.length} tópicos`,
   },
   {
-    href: "/roadmaps",
+    href: "/roadmaps/completo",
     icon: Route,
     title: "Roadmaps",
     description: "Trajetória de Thiago e Rodrigo até maestria e liderança.",
@@ -49,6 +50,8 @@ const FOCUS_IDEAS = TRENDS.filter((t) =>
 export default function DashboardPage() {
   return (
     <div className="flex flex-col gap-10 px-6 py-8 md:px-10">
+      <AiNewsBand />
+
       <section className="relative flex items-center justify-between gap-8 overflow-hidden">
         <div className="relative z-10 animate-fade-up">
           <div className="text-[13px] font-medium uppercase tracking-wide text-accent-vivid">

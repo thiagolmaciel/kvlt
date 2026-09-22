@@ -5,7 +5,7 @@ export const runtime = "nodejs";
 export const maxDuration = 60;
 
 const MODEL = "claude-haiku-4-5-20251001";
-const MAX_TOKENS = 1024;
+const MAX_TOKENS = 400;
 const MAX_WEB_SEARCHES = 3;
 const MAX_HISTORY_MESSAGES = 20;
 

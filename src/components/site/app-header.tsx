@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 import { NAV_ITEMS } from "@/lib/nav";
 import { CommandPalette } from "@/components/site/command-palette";
 import { ThemeToggle } from "@/components/site/theme-toggle";
+import { FounderPanel } from "@/components/site/founder-panel";
 
 export function AppHeader() {
   const pathname = usePathname();
@@ -90,6 +91,7 @@ export function AppHeader() {
       <div className="ml-auto flex items-center gap-2">
         <CommandPalette />
         <ThemeToggle />
+        <FounderPanel />
       </div>
     </div>
     </header>

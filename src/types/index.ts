@@ -157,3 +157,23 @@ export interface InfoSource {
   url: string;
   note: string;
 }
+
+export type NewsImportance = "alta" | "media" | "baixa";
+
+export interface AiNewsItem {
+  title: string;
+  url: string;
+  source: string;
+  publishedAt: string;
+  summary: string;
+  importance: NewsImportance;
+}
+
+export interface TrendSignal {
+  id: string;
+  newsTitle: string;
+  newsUrl: string;
+  source: string;
+  relevance: string;
+  capturedAt: string;
+}

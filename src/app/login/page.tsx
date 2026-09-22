@@ -12,10 +12,29 @@ import { LoginWireframe } from "@/components/site/login-wireframe";
 export default function LoginPage() {
   const router = useRouter();
   const [key, setKey] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    router.push("/dashboard");
+    setError("");
+    setLoading(true);
+    try {
+      const res = await fetch("/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: key }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        setError(data.error ?? "Chave inválida.");
+        return;
+      }
+      router.push("/dashboard");
+      router.refresh();
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -67,19 +86,23 @@ export default function LoginPage() {
                   <KeyRound className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-muted-foreground" />
                   <Input
                     id="key"
+                    type="password"
                     value={key}
                     onChange={(e) => setKey(e.target.value)}
-                    placeholder="Cole a chave gerada"
+                    placeholder="Chave de acesso"
                     className="h-11 pl-9 text-[15px] font-mono tracking-wide"
-                    autoComplete="off"
+                    autoComplete="current-password"
                   />
                 </div>
-                <p className="text-[13px] text-muted-foreground">
-                  Mockup. Geração externa da chave ainda não conectada; qualquer valor entra.
-                </p>
+                {error && <p className="text-[13px] text-destructive">{error}</p>}
               </div>
-              <Button type="submit" className="h-11 w-full text-[15px]">
-                Entrar
+              <Button
+                type="submit"
+                className="h-11 w-full text-[15px]"
+                disabled={loading || !key}
+                suppressHydrationWarning
+              >
+                {loading ? "Entrando..." : "Entrar"}
               </Button>
             </form>
           </div>

@@ -1,19 +1,5 @@
-import { Route } from "lucide-react";
-import { PageHeader } from "@/components/site/page-header";
-import { RoadmapView } from "@/components/roadmap/roadmap-view";
-import { ROADMAP_THIAGO, ROADMAP_RODRIGO } from "@/data/roadmaps";
+import { PersonalHome } from "@/components/home/personal-home";
 
 export default function RoadmapsPage() {
-  return (
-    <div>
-      <PageHeader
-        title="Roadmaps"
-        icon={Route}
-        description="Rota individual, mais eficiente possível, até o nível de maestria técnica e de negócio exigido em cada estágio da empresa."
-      />
-      <div className="px-6 py-6 md:px-10">
-        <RoadmapView thiago={ROADMAP_THIAGO} rodrigo={ROADMAP_RODRIGO} />
-      </div>
-    </div>
-  );
+  return <PersonalHome />;
 }
