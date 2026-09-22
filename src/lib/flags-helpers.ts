@@ -53,6 +53,7 @@ export interface FocusCandidate {
   key: string;
   label: string;
   link?: string;
+  provider?: string;
   source: FocusSource;
   defaultDays: number;
 }
@@ -60,6 +61,7 @@ export interface FocusCandidate {
 export interface FocusEntry {
   label: string;
   link?: string;
+  provider?: string;
   source: FocusSource;
   startedAt: string;
   deadlineDays: number;
@@ -89,6 +91,7 @@ export function getFocusCandidates(founder: Founder): FocusCandidate[] {
       key: `guide:0:${ri}`,
       label: r.title,
       link: r.url,
+      provider: r.provider,
       source: "guia",
       defaultDays: 7,
     });

@@ -273,21 +273,13 @@ function CandidateRow({
   onEmbrace,
 }: {
   candidate: ReturnType<typeof getFocusCandidates>[number];
-  onEmbrace: (days: number) => void;
+  onEmbrace: () => void;
 }) {
-  const [days, setDays] = useState(candidate.defaultDays);
   return (
     <div className="flex items-center gap-2 rounded-md px-2 py-1.5 hover:bg-muted/60">
       <span className="flex-1 truncate text-[13px]">{candidate.label}</span>
-      <input
-        type="number"
-        min={1}
-        value={days}
-        onChange={(e) => setDays(Math.max(1, Number(e.target.value) || 1))}
-        className="h-7 w-14 rounded-md border border-input bg-transparent px-1.5 text-center text-[12px] outline-none focus-visible:border-ring"
-      />
-      <span className="text-[11px] text-muted-foreground">dias</span>
-      <Button size="xs" onClick={() => onEmbrace(days)}>
+      <span className="text-[11px] text-muted-foreground">{candidate.defaultDays} dias</span>
+      <Button size="xs" onClick={onEmbrace}>
         Abraçar
       </Button>
     </div>
@@ -311,13 +303,14 @@ function FocusSection({
   const activeKeys = new Set(active.map((a) => a.itemKey));
   const candidates = getFocusCandidates(founder).filter((c) => !activeKeys.has(c.key));
 
-  function embrace(candidate: ReturnType<typeof getFocusCandidates>[number], days: number) {
+  function embrace(candidate: ReturnType<typeof getFocusCandidates>[number]) {
     const entry: FocusEntry = {
       label: candidate.label,
       link: candidate.link,
+      provider: candidate.provider,
       source: candidate.source,
       startedAt: new Date().toISOString(),
-      deadlineDays: days,
+      deadlineDays: candidate.defaultDays,
     };
     setFlag(focusFlagKey(founder, candidate.key), entry);
   }
@@ -331,50 +324,77 @@ function FocusSection({
     void entry;
   }
 
+  const candidateGuides = candidates.filter((c) => c.source === "guia");
+  const candidateTasks = candidates.filter((c) => c.source === "tarefa");
+
   return (
     <Section icon={Sparkles} title="Foco atual" count={active.length}>
-      <div className="flex flex-col gap-2.5">
-        {active.map(({ itemKey, entry }) => {
-          const left = daysLeft(entry);
-          return (
-            <Card key={itemKey} className="border-primary/25 bg-primary/[0.04]">
-              <CardContent className="flex items-center justify-between gap-3 p-3.5">
-                <div className="min-w-0 flex-1">
-                  <div className="truncate text-[13px] font-medium">{entry.label}</div>
-                  <div className="mt-0.5 flex items-center gap-1.5 text-[11px] text-muted-foreground">
-                    <Clock className="size-3" />
-                    {left >= 0 ? `${left} dia(s) faltando` : `${-left} dia(s) atrasado`}
-                    <span className="capitalize">· {entry.source}</span>
+      <div className="flex flex-col gap-4">
+        {active.length > 0 && (
+          <div className="grid gap-3 sm:grid-cols-2">
+            {active.map(({ itemKey, entry }) => {
+              const left = daysLeft(entry);
+              return (
+                <div key={itemKey} className="overflow-hidden rounded-lg border border-primary/25">
+                  <div className="bg-primary/[0.06] p-3.5">
+                    <div className="text-[13px] font-medium leading-snug">{entry.label}</div>
+                    <div className="mt-1 flex items-center gap-1.5 text-[11px] text-muted-foreground">
+                      <Clock className="size-3" />
+                      {left >= 0 ? `${left} dia(s) faltando` : `${-left} dia(s) atrasado`}
+                    </div>
                   </div>
-                </div>
-                <div className="flex shrink-0 items-center gap-1.5">
                   {entry.link && (
-                    <Button
-                      size="xs"
-                      variant="outline"
-                      nativeButton={false}
-                      render={<a href={entry.link} target="_blank" rel="noreferrer" />}
+                    <a
+                      href={entry.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-between border-t border-primary/20 bg-card px-3.5 py-2 text-[12px] font-medium hover:bg-muted/60"
                     >
-                      Abrir
-                    </Button>
+                      {entry.provider ?? "Abrir link"}
+                      <ExternalLink className="size-3 text-muted-foreground" />
+                    </a>
                   )}
-                  <Button size="xs" onClick={() => conclude(itemKey, entry)}>
+                  <button
+                    type="button"
+                    onClick={() => conclude(itemKey, entry)}
+                    className="flex w-full items-center justify-center border-t border-primary/20 bg-card px-3.5 py-2 text-[12px] font-medium text-accent-vivid hover:bg-muted/60"
+                  >
                     Concluir
-                  </Button>
+                  </button>
                 </div>
+              );
+            })}
+          </div>
+        )}
+
+        {candidateGuides.length > 0 && (
+          <div>
+            <div className="mb-1.5 text-[11px] uppercase tracking-wide text-muted-foreground">
+              Guias rápidos
+            </div>
+            <Card>
+              <CardContent className="flex flex-col gap-0.5 p-2">
+                {candidateGuides.map((c) => (
+                  <CandidateRow key={c.key} candidate={c} onEmbrace={() => embrace(c)} />
+                ))}
               </CardContent>
             </Card>
-          );
-        })}
+          </div>
+        )}
 
-        {candidates.length > 0 && (
-          <Card>
-            <CardContent className="flex flex-col gap-0.5 p-2">
-              {candidates.map((c) => (
-                <CandidateRow key={c.key} candidate={c} onEmbrace={(days) => embrace(c, days)} />
-              ))}
-            </CardContent>
-          </Card>
+        {candidateTasks.length > 0 && (
+          <div>
+            <div className="mb-1.5 text-[11px] uppercase tracking-wide text-muted-foreground">
+              Tarefas
+            </div>
+            <Card>
+              <CardContent className="flex flex-col gap-0.5 p-2">
+                {candidateTasks.map((c) => (
+                  <CandidateRow key={c.key} candidate={c} onEmbrace={() => embrace(c)} />
+                ))}
+              </CardContent>
+            </Card>
+          </div>
         )}
       </div>
     </Section>
@@ -422,12 +442,13 @@ export function PersonalHome() {
             E aí, {ROADMAPS[founder].name}.
           </h1>
         </div>
-        <Link
-          href="/roadmaps/completo"
-          className="flex shrink-0 items-center justify-center rounded-2xl border border-primary/20 bg-primary/10 text-accent-vivid size-14 hover:bg-primary/15"
-          title="Roadmap completo"
-        >
-          <Route className="size-6" strokeWidth={1.75} />
+        <Link href="/roadmaps/completo" className="flex shrink-0 flex-col items-center gap-1.5 group">
+          <span className="flex size-14 items-center justify-center rounded-2xl border border-primary/20 bg-primary/10 text-accent-vivid group-hover:bg-primary/15">
+            <Route className="size-6" strokeWidth={1.75} />
+          </span>
+          <span className="text-[11px] text-muted-foreground group-hover:text-accent-vivid">
+            Roadmap completo
+          </span>
         </Link>
       </div>
 
