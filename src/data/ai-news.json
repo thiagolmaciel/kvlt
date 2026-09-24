@@ -1,100 +1,100 @@
 {
-  "generatedAt": "2026-09-23T08:16:50.604Z",
+  "generatedAt": "2026-09-24T08:08:06.127Z",
   "items": [
     {
-      "title": "OpenAI wants to consult elite mathematicians about how to not fumble again",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
-      "source": "The Verge",
-      "publishedAt": "2026-09-23T00:17:17.000Z",
-      "summary": "After turning a string of spectacular mathematical results into a reputational crisis, OpenAI is consulting human mathematicians to help it figure out a less disastrous path forward.\nOn Monday, the company announced a ne",
+      "title": "Everything new coming to Meta’s AI agent Muse",
+      "url": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-09-24T01:13:32.000Z",
+      "summary": "CEO Mark Zuckerberg kicked off the company’s annual Connect event in Menlo Park on Wednesday with a keynote that made one thing clear: Meta is going all-in on Muse. It's even coming to Meta's AI glasses.",
       "importance": "media"
     },
     {
-      "title": "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4",
-      "url": "https://techcrunch.com/2026/09/22/techcrunch-founder-summits-agenda-revealed-unlock-fundraising-hiring-and-ai-insights-in-boston-on-november-4/",
+      "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent",
+      "url": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/",
       "source": "TechCrunch",
-      "publishedAt": "2026-09-22T23:21:49.000Z",
-      "summary": "Founders shouldn't have to learn the hardest lessons the hardest way. TechCrunch Founder Summit is designed to make the challenges of starting a company easier and the highs that much greater.",
+      "publishedAt": "2026-09-24T00:46:17.000Z",
+      "summary": "The tiny hardware device creates  another mobile home for its AI agent Muse.",
+      "importance": "media"
+    },
+    {
+      "title": "Meta is making a standalone Muse AI gadget",
+      "url": "https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware",
+      "source": "The Verge",
+      "publishedAt": "2026-09-24T00:15:20.000Z",
+      "summary": "Meta is building a dedicated hardware device for its new Muse AI agent. The product, called Muse Charm, was briefly shown off by Meta CEO Mark Zuckerberg at the end of tonight's Meta Connect presentation. It looks almost",
+      "importance": "media"
+    },
+    {
+      "title": "Muse is coming to Meta smart glasses",
+      "url": "https://www.theverge.com/tech/999673/meta-connect-2026-muse-glasses-features",
+      "source": "The Verge",
+      "publishedAt": "2026-09-23T23:40:56.000Z",
+      "summary": "Just a couple of weeks after launching Muse, Meta announced that it's \"working on\" bringing the agent to its smart glasses, including the new glasses it unveiled at Meta Connect. Users will be able to activate Muse from ",
+      "importance": "alta"
+    },
+    {
+      "title": "Meta introduces camera-free AI glasses",
+      "url": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-09-23T23:39:44.000Z",
+      "summary": "Meta says the camera-free glasses will be lighter and have up to 12 hours battery life.",
       "importance": "baixa"
     },
     {
-      "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
-      "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-09-22T21:56:43.000Z",
-      "summary": "The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.",
-      "importance": "media"
+      "title": "Meta ditches the camera on its newest smart glasses",
+      "url": "https://www.theverge.com/tech/999281/ray-ban-meta-audio-glasses-meta-connect-2026",
+      "source": "The Verge",
+      "publishedAt": "2026-09-23T23:37:17.000Z",
+      "summary": "The Ray-Ban Meta Audio Glasses have no cameras. | Photo by Brett Putman / The Verge\t\n\nWalking around Meta Connect 2026, everyone's sporting smart glasses in all sorts of shapes, colors, and sizes. It's a marked differenc",
+      "importance": "alta"
     },
     {
-      "title": "Rabbit’s new AI agent doesn’t need an R1 to run",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
+      "title": "Meta is making Muse more powerful and will let you video chat with it, too",
+      "url": "https://www.theverge.com/tech/999454/meta-muse-ai-agent-video-chat-connect-2026",
       "source": "The Verge",
-      "publishedAt": "2026-09-22T20:52:40.000Z",
-      "summary": "Rabbit, the company behind the underwhelming R1 device, is rolling out a standalone AI agent that you don't need its hardware to use, as reported earlier by Wired. The startup says its new OS3 \"agentic operating system\" ",
+      "publishedAt": "2026-09-23T23:19:42.000Z",
+      "summary": "Meta is quickly iterating on its new Muse AI agent, announcing a bunch of updates today that make the bot more capable and able to chat with you in more ways.\nMuse agents are getting their own email addresses that they c",
       "importance": "baixa"
     },
     {
-      "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
-      "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
+      "title": "Meta Connect 2026: The biggest news and announcements",
+      "url": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
+      "source": "The Verge",
+      "publishedAt": "2026-09-23T22:45:00.000Z",
+      "summary": "It’s about time for Meta Connect, the company’s annual product launch event. This year, given the company’s major focus on AI and wearables like smart glasses, it seems likely that we’ll see updates from CEO Mark Zuckerb",
+      "importance": "alta"
+    },
+    {
+      "title": "Meta Connect 2026 live blog: On the ground at Mark Zuckerberg’s next big product launch",
+      "url": "https://www.theverge.com/tech/998457/meta-connect-2026-live-blog-mark-zuckerberg-keynote",
+      "source": "The Verge",
+      "publishedAt": "2026-09-23T22:30:00.000Z",
+      "summary": "It's time once again for Meta's annual September product launch event, and The Verge is on the ground in Menlo Park to cover the show live. Meta says that today's keynote by Mark Zuckerberg will be about how \"Meta is bui",
+      "importance": "alta"
+    },
+    {
+      "title": "Anthropic says its biology lab has already found something big",
+      "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
       "source": "TechCrunch",
-      "publishedAt": "2026-09-22T20:00:00.000Z",
-      "summary": "Qualcomm said that its new top chip can run 30B mixture-of-expert model locally.",
+      "publishedAt": "2026-09-23T22:17:39.000Z",
+      "summary": "But maybe the biggest reveal is that Anthropic has not let Claude run loose in its biology lab. Humans are still, so far, in the loop.",
       "importance": "media"
     },
     {
-      "title": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
-      "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
-      "source": "Ars Technica",
-      "publishedAt": "2026-09-22T19:45:47.000Z",
-      "summary": "EvilTokens provided an end-to-end platform that makes mass compromises faster and easier.",
+      "title": "Enveda secures $311M to bring more nature-derived AI drugs into clinical trials",
+      "url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-09-23T19:31:28.000Z",
+      "summary": "The round valued the AI biotech at $2 billion. It is currently testing drugs that treat skin conditions and preserve weight loss after stopping GLP-1s.",
       "importance": "baixa"
     },
     {
-      "title": "Meta admits Muse’s likeness to OpenClaw isn’t a coincidence",
-      "url": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-09-22T19:09:11.000Z",
-      "summary": "Meta says Muse was built from scratch, but acknowledges the AI assistant was \"heavily inspired\" by OpenClaw — down to some of its workspace filenames and content.",
-      "importance": "media"
-    },
-    {
-      "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
-      "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-09-22T18:00:00.000Z",
-      "summary": "OpenAI is launching two new models, which it says are cut from the same cloth as Astra.",
-      "importance": "alta"
-    },
-    {
-      "title": "Andreessen Horowitz is launching an ‘academy’ with no homework and partnerships with Palantir, Google, and Meta",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
+      "title": "Meta’s AI agent is a cute little guy who’s great at spending my money",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/999526/meta-muse-ai-agent-hands-on-shopping",
       "source": "The Verge",
-      "publishedAt": "2026-09-22T16:34:08.000Z",
-      "summary": "Venture capital firm Andreessen Horowitz (a16z) is creating an \"academy\" positioned as a pipeline for young people to build or join a Silicon Valley startup. The \"Horowitz Andreessen Academy\" will launch with 10 partners",
-      "importance": "alta"
-    },
-    {
-      "title": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance",
-      "url": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-09-22T16:30:07.000Z",
-      "summary": "Anthropic called it \"the strongest-performing model we've tested to date.\"",
-      "importance": "alta"
-    },
-    {
-      "title": "Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
-      "source": "The Verge",
-      "publishedAt": "2026-09-22T16:30:00.000Z",
-      "summary": "Anthropic says its new Claude Opus 5.5 model comes with stronger safeguards in the wake of recent rogue AI hacking incidents. In an announcement on Tuesday, Anthropic says Opus 5.5 comes with improvements to certain risk",
-      "importance": "alta"
-    },
-    {
-      "title": "Trump says the US is officially renaming AI to ‘super intelligence’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/998816/donald-trump-ai-super-intelligence",
-      "source": "The Verge",
-      "publishedAt": "2026-09-22T16:01:10.000Z",
-      "summary": "In a speech Tuesday morning at the UN General Assembly, Donald Trump railed against Iran, \"globalists,\" climate change, and transgender people while also claiming that the US is now \"officially\" renaming artificial intel",
+      "publishedAt": "2026-09-23T19:00:00.000Z",
+      "summary": "An adorable little bear that wants to help you buy things.\t\n\nModern life comes with an unending, auto-populating to-do list. \nIt never ceases to amaze me how I can be doing nothing at all, minding my own business, and su",
       "importance": "baixa"
     }
   ]
