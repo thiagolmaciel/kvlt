@@ -1,100 +1,100 @@
 {
-  "generatedAt": "2026-09-24T08:08:06.127Z",
+  "generatedAt": "2026-09-25T08:31:36.885Z",
   "items": [
     {
-      "title": "Everything new coming to Meta’s AI agent Muse",
-      "url": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-09-24T01:13:32.000Z",
-      "summary": "CEO Mark Zuckerberg kicked off the company’s annual Connect event in Menlo Park on Wednesday with a keynote that made one thing clear: Meta is going all-in on Muse. It's even coming to Meta's AI glasses.",
-      "importance": "media"
-    },
-    {
-      "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent",
-      "url": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-09-24T00:46:17.000Z",
-      "summary": "The tiny hardware device creates  another mobile home for its AI agent Muse.",
-      "importance": "media"
-    },
-    {
-      "title": "Meta is making a standalone Muse AI gadget",
-      "url": "https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware",
+      "title": "Gemini 3.8 Live with Live Avatar gives Google&#8217;s AI a face",
+      "url": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
       "source": "The Verge",
-      "publishedAt": "2026-09-24T00:15:20.000Z",
-      "summary": "Meta is building a dedicated hardware device for its new Muse AI agent. The product, called Muse Charm, was briefly shown off by Meta CEO Mark Zuckerberg at the end of tonight's Meta Connect presentation. It looks almost",
-      "importance": "media"
-    },
-    {
-      "title": "Muse is coming to Meta smart glasses",
-      "url": "https://www.theverge.com/tech/999673/meta-connect-2026-muse-glasses-features",
-      "source": "The Verge",
-      "publishedAt": "2026-09-23T23:40:56.000Z",
-      "summary": "Just a couple of weeks after launching Muse, Meta announced that it's \"working on\" bringing the agent to its smart glasses, including the new glasses it unveiled at Meta Connect. Users will be able to activate Muse from ",
+      "publishedAt": "2026-09-24T19:59:26.000Z",
+      "summary": "Google's new Gemini 3.8 Live update lets users have conversations with the model while watching an animated AI persona respond in real time. The \"Live Avatar\" will lip-sync and show different facial expressions during co",
       "importance": "alta"
     },
     {
-      "title": "Meta introduces camera-free AI glasses",
-      "url": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
+      "title": "Bring your co-founder, partner, or colleague and get 50% off a second TechCrunch Disrupt 2026 pass",
+      "url": "https://techcrunch.com/2026/09/24/bring-your-co-founder-partner-or-colleague-and-get-50-off-a-second-techcrunch-disrupt-2026-pass/",
       "source": "TechCrunch",
-      "publishedAt": "2026-09-23T23:39:44.000Z",
-      "summary": "Meta says the camera-free glasses will be lighter and have up to 12 hours battery life.",
+      "publishedAt": "2026-09-24T19:15:00.000Z",
+      "summary": "Buy one pass to TechCrunch Disrupt 2026 and get 50% off a second of the same ticket type. Register before event starts on October 13 at 8 a.m. PT.",
       "importance": "baixa"
     },
     {
-      "title": "Meta ditches the camera on its newest smart glasses",
-      "url": "https://www.theverge.com/tech/999281/ray-ban-meta-audio-glasses-meta-connect-2026",
-      "source": "The Verge",
-      "publishedAt": "2026-09-23T23:37:17.000Z",
-      "summary": "The Ray-Ban Meta Audio Glasses have no cameras. | Photo by Brett Putman / The Verge\t\n\nWalking around Meta Connect 2026, everyone's sporting smart glasses in all sorts of shapes, colors, and sizes. It's a marked differenc",
-      "importance": "alta"
-    },
-    {
-      "title": "Meta is making Muse more powerful and will let you video chat with it, too",
-      "url": "https://www.theverge.com/tech/999454/meta-muse-ai-agent-video-chat-connect-2026",
-      "source": "The Verge",
-      "publishedAt": "2026-09-23T23:19:42.000Z",
-      "summary": "Meta is quickly iterating on its new Muse AI agent, announcing a bunch of updates today that make the bot more capable and able to chat with you in more ways.\nMuse agents are getting their own email addresses that they c",
+      "title": "PrismML brings its tiny LLMs to Qualcomm-powered smart glasses",
+      "url": "https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-09-24T19:00:42.000Z",
+      "summary": "Prism's larger goal is open-weight AI that runs on devices and makes better use of the computing power they already have.",
       "importance": "baixa"
     },
     {
-      "title": "Meta Connect 2026: The biggest news and announcements",
-      "url": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
-      "source": "The Verge",
-      "publishedAt": "2026-09-23T22:45:00.000Z",
-      "summary": "It’s about time for Meta Connect, the company’s annual product launch event. This year, given the company’s major focus on AI and wearables like smart glasses, it seems likely that we’ll see updates from CEO Mark Zuckerb",
-      "importance": "alta"
-    },
-    {
-      "title": "Meta Connect 2026 live blog: On the ground at Mark Zuckerberg’s next big product launch",
-      "url": "https://www.theverge.com/tech/998457/meta-connect-2026-live-blog-mark-zuckerberg-keynote",
-      "source": "The Verge",
-      "publishedAt": "2026-09-23T22:30:00.000Z",
-      "summary": "It's time once again for Meta's annual September product launch event, and The Verge is on the ground in Menlo Park to cover the show live. Meta says that today's keynote by Mark Zuckerberg will be about how \"Meta is bui",
-      "importance": "alta"
-    },
-    {
-      "title": "Anthropic says its biology lab has already found something big",
-      "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
+      "title": "Oracle sends force majeure notice on its New Mexico Stargate data center",
+      "url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
       "source": "TechCrunch",
-      "publishedAt": "2026-09-23T22:17:39.000Z",
-      "summary": "But maybe the biggest reveal is that Anthropic has not let Claude run loose in its biology lab. Humans are still, so far, in the loop.",
+      "publishedAt": "2026-09-24T18:11:44.000Z",
+      "summary": "The notice would allow Oracle to delay payments should the facility miss its 2028 target to come online.",
+      "importance": "baixa"
+    },
+    {
+      "title": "Jensen Huang talks about AI and climate change like a supervillain",
+      "url": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain",
+      "source": "The Verge",
+      "publishedAt": "2026-09-24T18:04:44.000Z",
+      "summary": "As Jensen Huang puts it, AI can help fight climate change - but only if it inflicts \"an enormous amount of pain and suffering\" first.  \nThe Nvidia CEO discussed the future of energy and AI's impact on our planet in the l",
+      "importance": "alta"
+    },
+    {
+      "title": "Meta is going to let you build games with AI right on your phone",
+      "url": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
+      "source": "The Verge",
+      "publishedAt": "2026-09-24T17:52:29.000Z",
+      "summary": "Meta has a new plan to get people to make games for its Horizon social platform. The company today announced two new development tools  that will let you create games with AI prompts: Horizon Create, a mobile app, and Ho",
+      "importance": "alta"
+    },
+    {
+      "title": "Meta’s Muse Charm looks like a Tamagotchi, but it’s tapping into a much newer trend",
+      "url": "https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-09-24T17:39:24.000Z",
+      "summary": "Meta’s new AI gadget may look like a Tamagotchi, but its dangling form factor taps into a much broader Gen Z trend around bag charms, retro tech, and turning gadgets into fashion accessories.",
       "importance": "media"
     },
     {
-      "title": "Enveda secures $311M to bring more nature-derived AI drugs into clinical trials",
-      "url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-09-23T19:31:28.000Z",
-      "summary": "The round valued the AI biotech at $2 billion. It is currently testing drugs that treat skin conditions and preserve weight loss after stopping GLP-1s.",
-      "importance": "baixa"
+      "title": "Muse will apparently let you download its entire filesystem",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
+      "source": "The Verge",
+      "publishedAt": "2026-09-24T17:14:12.000Z",
+      "summary": "A pair of developers say that with very little prompting, Meta's Muse will share its entire filesystem with you. Peter James and Jonny L. Saunders have said they both independently coaxed Muse into zipping up and sharing",
+      "importance": "media"
     },
     {
-      "title": "Meta’s AI agent is a cute little guy who’s great at spending my money",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/999526/meta-muse-ai-agent-hands-on-shopping",
+      "title": "Muse sure looks a lot like OpenClaw",
+      "url": "https://www.theverge.com/report/1000180/muse-openclaw-instinct-lookalike",
       "source": "The Verge",
-      "publishedAt": "2026-09-23T19:00:00.000Z",
-      "summary": "An adorable little bear that wants to help you buy things.\t\n\nModern life comes with an unending, auto-populating to-do list. \nIt never ceases to amaze me how I can be doing nothing at all, minding my own business, and su",
+      "publishedAt": "2026-09-24T17:10:38.000Z",
+      "summary": "We seem to be entering into an AI agent renaissance. Meta's new consumer-facing AI agent, Muse, topped the App Store charts soon after its release and has 600,000 daily active users in the US, by an Apptopia estimate. An",
+      "importance": "alta"
+    },
+    {
+      "title": "Google Photos ‘Clueless’-inspired virtual closet is now available on Android and iOS",
+      "url": "https://techcrunch.com/2026/09/24/google-photos-clueless-inspired-virtual-closet-is-now-available-on-android-and-ios/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-09-24T17:00:00.000Z",
+      "summary": "The AI-powered feature builds a virtual wardrobe from your photos, and is now broadly available after first rolling out to Android users in June.",
+      "importance": "media"
+    },
+    {
+      "title": "It’s sinister that Meta’s Muse AI mascot is so cute",
+      "url": "https://www.theverge.com/column/999999/optimizer-meta-muse-ai-cute",
+      "source": "The Verge",
+      "publishedAt": "2026-09-24T17:00:00.000Z",
+      "summary": "The fireman outfit. Dead. | Photo by Sean Hollister / The Verge\t\n\nThis is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear ",
+      "importance": "media"
+    },
+    {
+      "title": "TechCrunch Founder Summit 2026: Everything you need to know",
+      "url": "https://techcrunch.com/2026/09/24/techcrunch-founder-summit-2026-everything-you-need-to-know/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-09-24T16:46:47.000Z",
+      "summary": "TechCrunch Founder Summit is a full-day gathering in Boston on November 4 where founders across all stages connect with top VCs and experienced entrepreneurs to gain tactical insights on building and scaling their compan",
       "importance": "baixa"
     }
   ]
