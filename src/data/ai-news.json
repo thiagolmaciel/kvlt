@@ -1,101 +1,101 @@
 {
-  "generatedAt": "2026-10-29T09:19:28.421Z",
+  "generatedAt": "2026-10-30T09:35:42.135Z",
   "items": [
     {
-      "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
-      "source": "The Verge",
-      "publishedAt": "2026-10-28T23:05:39.000Z",
-      "summary": "Asked about AI and the trend of college students booing tech CEOs at graduation ceremonies, Instagram head Adam Mosseri acknowledged in an interview that a lot of people really don't like AI, and it's not just young peop",
-      "importance": "media"
-    },
-    {
-      "title": "Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+      "title": "You don’t need to believe in a god to get a religious exemption from using AI at work",
+      "url": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
       "source": "TechCrunch",
-      "publishedAt": "2026-10-28T21:58:32.000Z",
-      "summary": "Microsoft has never disclosed Azure's quarterly revenue in dollars. But for the first time, we can see just how close it is getting to besting the biggest competitor in the market, AWS.",
-      "importance": "alta"
-    },
-    {
-      "title": "Google expands AI Search ads globally as core ad growth slows",
-      "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-10-28T21:48:37.000Z",
-      "summary": "The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.",
-      "importance": "media"
-    },
-    {
-      "title": "Microsoft recorded $10 billion in revenue from OpenAI",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-10-28T21:34:30.000Z",
-      "summary": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of th",
-      "importance": "alta"
-    },
-    {
-      "title": "Akai is embracing vibe-coded mods with an open-source MPC",
-      "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
-      "source": "The Verge",
-      "publishedAt": "2026-10-28T21:34:04.000Z",
-      "summary": "The MPC Sample Key looks like the MPC Sample just with keys instead of pads. | Image: Akai\t\n\nThe MPC Sample Key isn't even formally announced yet, but Akai is already showing off what the modding community is cooking up ",
+      "publishedAt": "2026-10-30T01:20:48.000Z",
+      "summary": "David Durman, a University of Kentucky administrator, recently earned a religious exemption from using AI in the workplace.",
       "importance": "baixa"
     },
     {
-      "title": "Microsoft hits 10 quarters of record-breaking revenue in a row",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+      "title": "AWS will be a $1T business, Jassy says — but first, it will spend big",
+      "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
       "source": "TechCrunch",
-      "publishedAt": "2026-10-28T21:25:30.000Z",
-      "summary": "Whatever the future of AI might be, the current situation is still very good for Microsoft. The tech giant reported yet another record for quarterly revenue on Wednesday: $92.3 billion, a 19% increase over the year-ago q",
+      "publishedAt": "2026-10-29T23:42:22.000Z",
+      "summary": "Amazon wants to be the king of AI cloud computing and become the first $1 trillion revenue business. But to do that it will have to continue on its capex spending spree, its CEO said Thursday.",
       "importance": "media"
     },
     {
-      "title": "Creating AI value with enterprise context",
-      "url": "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/",
-      "source": "MIT Technology Review",
-      "publishedAt": "2026-10-28T20:32:02.000Z",
-      "summary": "Across a business, any number of AI platforms, systems, and tools may be at work simultaneously—for example, AI-powered customer platforms, conversational assistants, and workflow and process automation tools. Each one i",
+      "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
+      "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-10-29T20:08:31.000Z",
+      "summary": "As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business.",
       "importance": "baixa"
     },
     {
-      "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
-      "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
-      "source": "The Verge",
-      "publishedAt": "2026-10-28T20:03:00.000Z",
-      "summary": "Google has released its latest frontier model, Gemini 4 Carbon, offering \"significant gains\" in coding, agentic tasks, and cybersecurity. In an announcement on Wednesday, Google highlights Carbon's top spot on the Artifi",
-      "importance": "alta"
-    },
-    {
-      "title": "Anthropic just launched tools to show companies what their AI spending is buying",
-      "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+      "title": "Rivian expands joint venture with VW to include AI assistant",
+      "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
       "source": "TechCrunch",
-      "publishedAt": "2026-10-28T19:19:58.000Z",
-      "summary": "The frontier lab is lifting the curtain on how users spend money on its models ahead of a planned IPO.",
-      "importance": "alta"
-    },
-    {
-      "title": "Wiz’s CTO on PHP2Shell and the coming ‘vulnpocalypse’",
-      "url": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-10-28T19:05:46.000Z",
-      "summary": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, w",
-      "importance": "baixa"
-    },
-    {
-      "title": "The ‘Vulnpocalypse’ is coming for the internet’s aging code, says Wiz’s CTO",
-      "url": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/",
-      "source": "TechCrunch",
-      "publishedAt": "2026-10-28T18:50:39.000Z",
-      "summary": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, w",
-      "importance": "baixa"
-    },
-    {
-      "title": "Microsoft is ending Copilot support on smart TVs",
-      "url": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
-      "source": "The Verge",
-      "publishedAt": "2026-10-28T18:36:26.000Z",
-      "summary": "Nearly two years after LG and Samsung announced at CES 2025 that their latest smart TVs would include access to Microsoft's Copilot, the company is ending support for the AI assistant's functionality on all TVs this year",
+      "publishedAt": "2026-10-29T20:05:47.000Z",
+      "summary": "Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result.",
       "importance": "media"
+    },
+    {
+      "title": "OpenAI-backed Thrive Holdings acquires ADT",
+      "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-10-29T19:56:19.000Z",
+      "summary": "OpenAI-backed Thrive Holdings is buying ADT in a $15.3 billion deal, with plans to bring AI to the home security business.",
+      "importance": "alta"
+    },
+    {
+      "title": "Meta quietly launches an AI fashion app called Style Sketch",
+      "url": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-10-29T19:14:36.000Z",
+      "summary": "The app connects to Instagram to build a virtual closet from photos you’ve already shared, or lets you add items manually by snapping a photo, recording a quick video, or uploading images from your camera roll.",
+      "importance": "alta"
+    },
+    {
+      "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+      "source": "The Verge",
+      "publishedAt": "2026-10-29T18:45:31.000Z",
+      "summary": "Now you can generate, preview, and edit PDFs, Google Docs, Google Sheets, slide decks, Markdown files, TXT files, and code directly within Google Gemini. The new file editing capabilities are available starting today for",
+      "importance": "alta"
+    },
+    {
+      "title": "Granola crunches up a dictation feature to compete with Wispr",
+      "url": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-10-29T17:54:38.000Z",
+      "summary": "Uno reverse! After Wispr added meeting notes to its dictation app, Granola is adding dictation to its meeting notetaker. The voice AI wars are getting interesting.",
+      "importance": "baixa"
+    },
+    {
+      "title": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
+      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-10-29T17:00:00.000Z",
+      "summary": "Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can't.",
+      "importance": "alta"
+    },
+    {
+      "title": "US investigated Chinese spy plot aimed at Nvidia CEO",
+      "url": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-10-29T16:42:32.000Z",
+      "summary": "A top executive of a Singapore AI cloud company that was accused of illegally selling Nvidia chips to China could also have been a Chinese spy, sources have told the New York Times.",
+      "importance": "media"
+    },
+    {
+      "title": "Ex-Palantir execs launch Dream with $17M from a16z to build AI world models for construction",
+      "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+      "source": "TechCrunch",
+      "publishedAt": "2026-10-29T16:21:00.000Z",
+      "summary": "Dream is grounded in real physics and construction standards. Just as LLMs learn from text, Dream's world model is trained on more than 100 million square feet of building data gathered from permit archives across the Un",
+      "importance": "media"
+    },
+    {
+      "title": "Microsoft’s AI future has fewer jobs",
+      "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+      "source": "The Verge",
+      "publishedAt": "2026-10-29T16:00:00.000Z",
+      "summary": "To anyone listening closely to what Microsoft CEO Satya Nadella has been saying over the past couple of years, this week felt like the clearest sign yet that AI is about to fundamentally change the size of Microsoft's wo",
+      "importance": "baixa"
     }
   ]
 }
